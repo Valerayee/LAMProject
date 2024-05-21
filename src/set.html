@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Result Form</title>
+    <link rel="stylesheet" href="set_styles.css" />
+
+    <script defer src="set_renderer.js"></script>
+  </head>
+  <body>
+    <div style="margin: 0 auto; margin-top: 20px; border: solid; padding: 5px; border-radius: 8px; max-width: max-content;" id = "index_text">[INDEX]</div>
+    
+    <div style="margin-top: 20px; justify-content: space-evenly; display: flex">
+      <div style="border: solid; padding: 5px; border-radius: 8px;" id = "start_text">[START]</div>
+      <div style="border: solid; padding: 5px; border-radius: 8px;" id = "amplicon_text">[LENGTH]</div>
+      <div style="border: solid; padding: 5px; border-radius: 8px;" id = "end_text">[END]</div>
+    </div>
+
+    <div style="position: absolute; margin-left: 82%; margin-top: 21px; cursor: pointer" id="copy_button">copy</div>
+
+    <div style="border-style: solid; border-radius: 7px; margin: 20px auto;">
+      <div>5'-Base sequence-3'</div>
+      <div style="position: absolute; margin-top: 40px; margin-left: 33%;">3'-Complementary sequence-5'</div>
+      <div style="overflow-x: scroll; justify-content: center;">
+        <div style = "margin-left: 10px; word-break: keep-all; line-break: loose; white-space: nowrap; width: min-content;" id = "base_sequence_text">[BASE_SEQUENCE]</div>
+        <div style = " margin-left: 10px; word-break: keep-all; line-break: loose; white-space: nowrap; width: min-content; margin-bottom: 22px;" id = "complementary_sequence_text">[COMPLEMENTARY_SEQUENCE]</div>
+      </div>
+    </div>
+
+
+
+
+    <div style="margin-top: 20px; justify-content: space-evenly; display: flex">
+      
+      <div style="border: solid; padding: 5px; border-radius: 8px; justify-content: center;">
+        <div>F3</div>
+        <div>Sequence</div></duv>
+        <div id = "F3_seq_text">[SEQUENCE]</div>
+        <div style="justify-content: space-evenly; display: flex;">
+          <div>Start<div id = "F3_start_text">[START]</div></div>
+          <div>Length<div id = "F3_length_text" style="margin-left: 10px;">[LENGTH]</div></div>
+          <div>End<div id = "F3_end_text" style="margin-left: 10px;">[END]</div></div>
+        </div>
+        <div style="justify-content: space-evenly; display: flex;">
+          <div>GC<div id = "F3_GC_text">[GC]</div></div>
+          <div>Tm<div id = "F3_Tm_text" style="margin-left: 10px;">[Tm]</div></div>
+        </div>
+      </div>
+
+      <div style="border: solid; padding: 5px; border-radius: 8px; justify-content: center;">
+        <div>F2</div>
+        <div>Sequence</div></duv>
+        <div id = "F2_seq_text">[SEQUENCE]</div>
+        <div style="justify-content: space-evenly; display: flex;">
+          <div>Start<div id = "F2_start_text">[START]</div></div>
+          <div>Length<div id = "F2_length_text" style="margin-left: 10px;">[LENGTH]</div></div>
+          <div>End<div id = "F2_end_text" style="margin-left: 10px;">[END]</div></div>
+        </div>
+        <div style="justify-content: space-evenly; display: flex;">
+          <div>GC<div id = "F2_GC_text">[GC]</div></div>
+          <div>Tm<div id = "F2_Tm_text" style="margin-left: 10px;">[Tm]</div></div>
+        </div>
+      </div>
+
+      <div style="border: solid; padding: 5px; border-radius: 8px; justify-content: center;">
+        <div>F1c</div>
+        <div>Sequence</div></duv>
+        <div id = "F1c_seq_text">[SEQUENCE]</div>
+        <div style="justify-content: space-evenly; display: flex;">
+          <div>Start<div id = "F1c_start_text">[START]</div></div>
+          <div>Length<div id = "F1c_length_text" style="margin-left: 10px;">[LENGTH]</div></div>
+          <div>End<div id = "F1c_end_text" style="margin-left: 10px;">[END]</div></div>
+        </div>
+        <div style="justify-content: space-evenly; display: flex;">
+          <div>GC<div id = "F1c_GC_text">[GC]</div></div>
+          <div>Tm<div id = "F1c_Tm_text" style="margin-left: 10px;">[Tm]</div></div>
+        </div>
+      </div>
+
+    </div>
+
+    <div style="margin-top: 10px; justify-content: space-evenly; display: flex">
+      
+      <div style="border: solid; padding: 5px; border-radius: 8px; justify-content: center;">
+        <div>B1c</div>
+        <div>Sequence</div></duv>
+        <div id = "B1c_seq_text">[SEQUENCE]</div>
+        <div style="justify-content: space-evenly; display: flex;">
+          <div>Start<div id = "B1c_start_text">[START]</div></div>
+          <div>Length<div id = "B1c_length_text" style="margin-left: 10px;">[LENGTH]</div></div>
+          <div>End<div id = "B1c_end_text" style="margin-left: 10px;">[END]</div></div>
+        </div>
+        <div style="justify-content: space-evenly; display: flex;">
+          <div>GC<div id = "B1c_GC_text">[GC]</div></div>
+          <div>Tm<div id = "B1c_Tm_text" style="margin-left: 10px;">[Tm]</div></div>
+        </div>
+      </div>
+
+      <div style="border: solid; padding: 5px; border-radius: 8px; justify-content: center;">
+        <div>B2</div>
+        <div>Sequence</div></duv>
+        <div id = "B2_seq_text">[SEQUENCE]</div>
+        <div style="justify-content: space-evenly; display: flex;">
+          <div>Start<div id = "B2_start_text">[START]</div></div>
+          <div>Length<div id = "B2_length_text" style="margin-left: 10px;">[LENGTH]</div></div>
+          <div>End<div id = "B2_end_text" style="margin-left: 10px;">[END]</div></div>
+        </div>
+        <div style="justify-content: space-evenly; display: flex;">
+          <div>GC<div id = "B2_GC_text">[GC]</div></div>
+          <div>Tm<div id = "B2_Tm_text" style="margin-left: 10px;">[Tm]</div></div>
+        </div>
+      </div>
+
+      <div style="border: solid; padding: 5px; border-radius: 8px; justify-content: center;">
+        <div>B3</div>
+        <div>Sequence</div></duv>
+        <div id = "B3_seq_text">[SEQUENCE]</div>
+        <div style="justify-content: space-evenly; display: flex;">
+          <div>Start<div id = "B3_start_text">[START]</div></div>
+          <div>Length<div id = "B3_length_text" style="margin-left: 10px;">[LENGTH]</div></div>
+          <div>End<div id = "B3_end_text" style="margin-left: 10px;">[END]</div></div>
+        </div>
+        <div style="justify-content: space-evenly; display: flex;">
+          <div>GC<div id = "B3_GC_text">[GC]</div></div>
+          <div>Tm<div id = "B3_Tm_text" style="margin-left: 10px;">[Tm]</div></div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </body>
+</html>
